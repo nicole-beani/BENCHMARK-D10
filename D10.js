@@ -268,13 +268,15 @@ console.log(sumAllTheYears(movies))
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
 const elem = function (){
-  const page = document.getElementById ('container')
+   document.getElementById ('container')
 }
 elem()
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
-
+const byTag = function (){
+    document.getElementsByTagName('td')
+  }
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
@@ -282,22 +284,42 @@ elem()
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
-
+const redCOLORLink = function (){
+    let ttLink = document.querySelectorAll("a")
+    ttLink.forEach ((e) => {
+      e.style.backgroundColor = "blue"
+    }
+    )
+  }
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
-document.createElement("li")
-document.getElementById("myList")
-
+let listanno = function (){
+let newli = document.createElement("li")
+const parentes24 = document.getElementById("myList")
+parentes24.appendChild(newli)
+}
 
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
-
+let es25 = function (){
+    let newli = document.getElementById("myList")
+    newli.removeChild("li")
+  
+  }
+  
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
-
+const classTr = function ( ){
+    let allTr = document.querySelectorAll("tr")
+    allTr.forEach ((e) =>{ e.classList.add ("test")
+  
+    }
+    )
+  }
+  // con querySelectorAll seleziona tutti i tr
 const movies = [
   {
     Title: 'The Lord of the Rings: The Fellowship of the Ring',
