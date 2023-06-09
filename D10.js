@@ -58,7 +58,7 @@ const whoIsBigger = function(a1,a2){
   if (a1 > a2) {
     return a1;
 } else if (a1 === a2) {
-    return "I due numeri sono uguali!"
+    return "I numeri sono uguali"
 } else {
     return a2
 }
